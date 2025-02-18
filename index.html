@@ -53,12 +53,16 @@
   </header>
 
   <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/pic.jpg" alt="" data-aos="fade-in">
-
+<!-- Hero Section with Background Image Slider -->
+<section id="hero" class="hero section dark-background">
+    <div class="slider-container">
+      <div class="slide active" style="background-image: url('assets/s24.jpg');"></div>
+      <div class="slide" style="background-image: url('assets/s1.jpg');"></div>
+      <div class="slide" style="background-image: url('assets/s2.jpg');"></div>
+    </div>
+   
+  
+  
       <!--<div class="container d-flex flex-column align-items-center text-center">
         <h2 data-aos="fade-up" data-aos-delay="100" class="meat-heading">The True Taste of Premium Meat</h2>
         <p data-aos="fade-up" data-aos-delay="200" class="meat-subtext">
@@ -69,7 +73,65 @@
                 <span class="play-icon">▶</span>
             </a>
         </div>
-        
+        <style>
+            .hero {
+              position: relative;
+              width: 100%;
+              height: 100vh;
+              overflow: hidden;
+            }
+            .slider-container {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+            }
+            .slide {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background-size: cover;
+              background-position: center;
+              opacity: 0;
+              transition: opacity 1s ease-in-out;
+            }
+            .slide.active {
+              opacity: 1;
+            }
+            .overlay-content {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+            
+ /* 📱 Mobile Responsive */
+ @media (max-width: 768px) {
+    .hero { height: 80vh; }
+    .overlay-content { font-size: 14px; }
+  }
+  
+  @media (max-width: 576px) {
+    .hero { height: 75vh; min-height: 500px; }
+    .overlay-content { font-size: 12px; }
+    .slide {
+      background-size: cover !important;
+      background-position: center;
+    }
+  }
+</style>
+
+<script>
+  let slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+  function changeSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+  setInterval(changeSlide, 4000);
+</script>
+
+          
         <!-- Include GLightbox library -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
         <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
