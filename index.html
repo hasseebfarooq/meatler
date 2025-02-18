@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Meatler</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">
+            <span class="gold-text">Meatler</span>  
+            <span class="tagline">for meat lovers</span>
+        </h1>
+    </a>
+    
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li> 
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav
+    
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/pic.jpg" alt="" data-aos="fade-in">
+
+      <!--<div class="container d-flex flex-column align-items-center text-center">
+        <h2 data-aos="fade-up" data-aos-delay="100" class="meat-heading">The True Taste of Premium Meat</h2>
+        <p data-aos="fade-up" data-aos-delay="200" class="meat-subtext">
+            Fresh, Juicy, & Unmatched Quality – Meat for True Connoisseurs!
+        </p>-->
+        <div data-aos="fade-up" data-aos-delay="300">
+            <a href="vedio/myvedio.mp4" class="glightbox pulsating-play-btn" data-type="video">
+                <span class="play-icon">▶</span>
+            </a>
+        </div>
+        
+        <!-- Include GLightbox library -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+        
+        <script>
+            // Initialize GLightbox with correct settings to avoid flickering
+            const lightbox = GLightbox({
+                selector: '.glightbox',
+                touchNavigation: true,
+                loop: false, // Auto loop off
+                autoplayVideos: true, // Ensure video starts playing automatically
+                openEffect: 'zoom', // Smooth opening effect
+                closeEffect: 'zoom', // Smooth closing effect
+                width: '90%', // Adjust video width
+                height: 'auto', // Maintain aspect ratio
+                zoomable: false // Disable zoom to prevent screen flickering
+            });
+        </script>
+        
+      
+    
+
+    </section><!-- /Hero Section -->
+
+    
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">  <span class="gold-text">Meatler</span>  
+        <span class="tagline">for meat lovers</span></h3>
+      
+      <div class="social-links d-flex justify-content-center">
+          <a href=""><i class="bi bi-whatsapp"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+      </div>
+      <p class="footer-text">Providing high-quality Meatler and Frozen Products for your everyday needs.</p>
+  </div>
+  
+   
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;900&family=Cinzel:wght@700&display=swap');
+
+.sitename {
+    font-family: 'Cinzel', serif;
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 10px 20px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.gold-text {
+    color: #ffffff;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.6);
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.tagline {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    font-family: 'Playfair Display', serif;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.sitename:hover .gold-text {
+    color: #800000; /* Mehroon */
+    text-shadow: 3px 3px 10px rgba(128, 0, 0, 0.7);
+}
+
+.sitename:hover .tagline {
+    color: #b22222; /* Darker Red */
+    text-shadow: 2px 2px 6px rgba(178, 34, 34, 0.7);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;900&family=Montserrat:wght@600&display=swap');
+
+.meat-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff; /* White */
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.6);
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in-out;
+}
+
+.meat-heading:hover {
+    color: #8B0000; /* Maroon */
+    text-shadow: 3px 3px 10px rgba(139, 0, 0, 0.8);
+}
+
+.meat-subtext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.meat-subtext:hover {
+    background: #8B0000; /* Maroon */
+    color: #ffffff;
+}
+
+
+
+.pulsating-play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+.pulsating-play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transform: perspective(100px) rotateX(10deg) rotateY(10deg);
+}
+
+/* 🔥 Pulsating 3D Effect 🔥 */
+.pulsating-play-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    animation: pulse-animation 1.5s infinite;
+    transform-origin: center;
+}
+
+/* 🔄 Transparent White Play Icon 🔄 */
+.play-icon {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* 🟥 Hover Effect - Stop Animation & Maroon Color 🟥 */
+.pulsating-play-btn:hover {
+    background: #8B0000; /* Deep Maroon */
+    box-shadow: 0 0 25px rgba(139, 0, 0, 0.9);
+    border-color: rgba(255, 215, 0, 0.8); /* Golden Border */
+    animation: none;
+    transform: scale(1.1);
+}
+
+/* 🎯 Hover پر Play Icon Golden ہو جائے 🎯 */
+.pulsating-play-btn:hover .play-icon {
+    color: #FFD700; /* Golden */
+    transform: scale(1.2);
+}
+
+
+/* 🎬 3D Pulsating Animation 🎬 */
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1) rotateX(10deg) rotateY(10deg);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.3) rotateX(0deg) rotateY(0deg);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1) rotateX(10deg) rotateY(10deg);
+        opacity: 0.7;
+    }
+}
+
+/* ✅ Default Styles (Desktop/Laptop) */
+.sitename {
+    font-size: 45px;
+    padding: 10px 20px;
+}
+
+.gold-text {
+    font-size: 50px;
+}
+
+.tagline {
+    font-size: 18px;
+}
+
+/* 🌍 Responsive Styles */
+
+/* 📱 Mobile View (Up to 576px) */
+@media (max-width: 576px) {
+    .sitename {
+        font-size: 30px;
+        padding: 5px 10px;
+    }
+
+    .gold-text {
+        font-size: 35px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    .meat-heading {
+        font-size: 35px;
+    }
+
+    .meat-subtext {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .pulsating-play-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .play-icon {
+        font-size: 24px;
+    }
+}
+
+/* 📱📲 Tablet View (577px to 768px) */
+@media (max-width: 768px) {
+    .sitename {
+        font-size: 35px;
+    }
+
+    .gold-text {
+        font-size: 40px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    .meat-heading {
+        font-size: 40px;
+    }
+
+    .meat-subtext {
+        font-size: 18px;
+    }
+
+    .pulsating-play-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .play-icon {
+        font-size: 28px;
+    }
+}
+
+/* 💻 Large Screen View (Laptops 769px - 1200px) */
+@media (max-width: 1200px) {
+    .sitename {
+        font-size: 40px;
+    }
+
+    .gold-text {
+        font-size: 45px;
+    }
+
+    .tagline {
+        font-size: 17px;
+    }
+
+    .meat-heading {
+        font-size: 45px;
+    }
+
+    .meat-subtext {
+        font-size: 20px;
+    }
+
+    .pulsating-play-btn {
+        width: 65px;
+        height: 65px;
+    }
+
+    .play-icon {
+        font-size: 30px;
+    }
+}
+
+
+</style>
