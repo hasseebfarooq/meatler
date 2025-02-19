@@ -20,7 +20,7 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #090707; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #282828; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #990a00; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -203,7 +203,8 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu a {
+  .navmenu a,
+  .navmenu a:focus {
     color: color-mix(in srgb, var(--nav-color), transparent 30%);
     font-size: 15px;
     padding: 0 2px;
@@ -215,47 +216,162 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
-    text-decoration: none; /* Underline completely removed */
   }
 
-  .navmenu a i {
+  .navmenu a i,
+  .navmenu a:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
   }
 
-  /* Remove underline for active link */
-  .navmenu .active {
-    color: var(--nav-color);
-    text-decoration: none !important; /* Ensure underline never appears */
-  }
-
-  /* Underline only on hover */
-  .navmenu>ul>li>a::before {
+  .navmenu>ul>li>a:before {
     content: "";
     position: absolute;
     height: 2px;
-    bottom: -5px;
+    bottom: -27px;
     left: 0;
     background-color: var(--nav-hover-color);
     visibility: hidden;
-    width: 0;
-    transition: all 0.3s ease-in-out;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
   }
 
-  /* Show underline only on hover */
-  .navmenu>ul>li:hover>a::before {
+  .navmenu a:hover:before,
+  .navmenu li:hover>a:before,
+  .navmenu .active:before {
     visibility: visible;
     width: 100%;
   }
 
-  /* Text color change on hover */
-  .navmenu>ul>li:hover>a {
+  .navmenu li:hover>a,
+  .navmenu .active,
+  .navmenu .active:focus {
     color: var(--nav-color);
   }
+
+ 
+
+  .navmenu .dropdown ul li {
+    min-width: 200px;
+  }
+
+  
+
+  
+
+
+  
 }
 
+/* Mobile Navigation */
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    color: var(--nav-color);
+    font-size: 28px;
+    line-height: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .navmenu {
+    padding: 0;
+    z-index: 9997;
+  }
+
+  .navmenu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    inset: 60px 20px 20px 20px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 6px;
+    background-color: var(--nav-mobile-background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: none;
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-dropdown-color);
+    padding: 10px 20px;
+    font-family: var(--nav-font);
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  }
+
+  .navmenu a i:hover,
+  .navmenu a:focus i:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+  }
+
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .active i,
+  .navmenu .active:focus i {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    transform: rotate(180deg);
+  }
+
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active .mobile-nav-toggle {
+    color: #fff;
+    position: absolute;
+    font-size: 32px;
+    top: 15px;
+    right: 15px;
+    margin-right: 0;
+    z-index: 9999;
+  }
+
+  .mobile-nav-active .navmenu {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    background: rgba(2, 2, 2, 0.8);
+    transition: 0.3s;
+  }
+
+  .mobile-nav-active .navmenu>ul {
+    display: block;
+  }
+}
 
 /*--------------------------------------------------------------
 # Global Footer
