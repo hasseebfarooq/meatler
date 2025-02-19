@@ -39,17 +39,19 @@
         </h1>
     </a>
     
-      <nav id="navmenu" class="navmenu">
+      
+    <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="service.html">Services</a></li> 
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="#product">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav
-    
-    </div>
+      </nav>
+      </div>
+      
   </header>
 
   <main class="main">
@@ -67,12 +69,12 @@
         <h2 data-aos="fade-up" data-aos-delay="100" class="meat-heading">The True Taste of Premium Meat</h2>
         <p data-aos="fade-up" data-aos-delay="200" class="meat-subtext">
             Fresh, Juicy, & Unmatched Quality – Meat for True Connoisseurs!
-        </p>-->
+        </p>
         <div data-aos="fade-up" data-aos-delay="300">
             <a href="vedio/myvedio.mp4" class="glightbox pulsating-play-btn" data-type="video">
                 <span class="play-icon">▶</span>
             </a>
-        </div>
+        </div>-->
         <style>
             .hero {
               position: relative;
@@ -129,6 +131,9 @@
     slides[currentSlide].classList.add('active');
   }
   setInterval(changeSlide, 4000);
+
+
+  
 </script>
 
           
@@ -151,30 +156,361 @@
             });
         </script>
         
-      
-    
-
+        
+            
     </section><!-- /Hero Section -->
+<br>
+<br>
+<br>
+<br>
+<br>
 
+   <!-- <div class="container section-title" data-aos="fade-up" id="product">
+        <h2>Our Products</h2>
+        <div class="product-grid">-->
+            <section id="product" class="contact-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Our Products</h2>
+                    </div>
+    <div class="product-grid">
+            <div class="product-item" onclick="openModal('assets/product1.jpg')">
+                <img src="assets/product1.jpg" alt="Smart Watch">
+                <h3>Smart Watch</h3>
+                <p>Track your fitness with this stylish watch.</p>
+                <div class="price">$199.99</div>
+            </div>
     
+            <div class="product-item" onclick="openModal('assets/product2.jpg')">
+                <img src="assets/product2.jpg" alt="Wireless Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>Immersive sound with noise cancellation.</p>
+                <div class="price">$149.99</div>
+            </div>
+    
+            <div class="product-item" onclick="openModal('assets/product3.jpg')">
+                <img src="assets/product3.jpg" alt="Gaming Laptop">
+                <h3>Gaming Laptop</h3>
+                <p>High-performance laptop for ultimate gaming.</p>
+                <div class="price">$999.99</div>
+            </div>
+    
+            <div class="product-item" onclick="openModal('assets/product4.jpg')">
+                <img src="assets/product4.jpg" alt="4K Smart TV">
+                <h3>4K Smart TV</h3>
+                <p>Ultra HD display with smart features.</p>
+                <div class="price">$599.99</div>
+            </div>
+    
+            <div class="product-item" onclick="openModal('assets/product5.jpg')">
+                <img src="assets/product5.jpg" alt="Bluetooth Speaker">
+                <h3>Bluetooth Speaker</h3>
+                <p>Portable speaker with deep bass.</p>
+                <div class="price">$49.99</div>
+            </div>
+    
+            <div class="product-item" onclick="openModal('assets/product6.jpg')">
+                <img src="assets/product6.jpg" alt="DSLR Camera">
+                <h3>DSLR Camera</h3>
+                <p>Capture stunning images with high resolution.</p>
+                <div class="price">$799.99</div>
+            </div>
+    
+            <div class="product-item" onclick="openModal('assets/product7.jpg')">
+                <img src="assets/product7.jpg" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p>Latest smartphone with AI camera.</p>
+                <div class="price">$699.99</div>
+            </div>
+    
+            <div class="product-item" onclick="openModal('assets/product8.jpg')">
+                <img src="assets/product8.jpg" alt="VR Headset">
+                <h3>VR Headset</h3>
+                <p>Experience virtual reality like never before.</p>
+                <div class="price">$299.99</div>
+            </div>
+    
+            <div class="product-item" onclick="openModal('assets/img.webp')">
+                <img src="assets/img.webp" alt="Electric Scooter">
+                <h3>Electric Scooter</h3>
+                <p>Eco-friendly and efficient transportation.</p>
+                <div class="price">$499.99</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal for Image View -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+    
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+    
+        .product-item {
+            text-align: center;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #0b0b0a;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+        }
+    
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(252, 252, 252, 0.15); /* زیادہ transparent shade */
+            background: rgb(177, 174, 174);
+        border-radius: 12px;
+        box-shadow: 0 4px 10px #0b0b0a;
+        color: white;
+        transform: translateY(-5px);
+    }
+        
+    
+       
+  
+    
+    .product-item:hover h3 {
+        color: white;
+    }
+  
+    .contact-item:hover p {
+        color: #fff;
+    }
+  
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+    
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 35px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    
+    <script>
+        function openModal(imgSrc) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImg");
+            if (modal) {
+                modal.style.display = "flex";
+                modalImg.src = imgSrc;
+            }
+        }
+    
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            if (modal) {
+                modal.style.display = "none";
+            }
+        }
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("imageModal").style.display = "none";
+        });
+    </script>
+      </section>
 
+
+
+
+
+
+      
   </main>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+        <center>
+            <p class="highlight-text">Feel Free to Contact Us</p>
+          </center>
+        <br>
+          
+        <div class="contact-details">
+            <div class="contact-item">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Address</h4>
+                <p>Shop No.9 Market No.5 Railway Carriage Shop, Mughalpura, Lahoer</p>
+            </div>
+  
+            <div class="contact-item">
+                <i class="bi bi-telephone"></i>
+                <h4>Call Us</h4>
+                <p>+92 3361133301<br> 
+                +92 3350644677</p>
+            </div>
+  
+            <div class="contact-item">
+                <i class="bi bi-envelope"></i>
+                <h4>Email Us</h4>
+                <p>meatlerlahore@yahoo.com</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <style>
+    .contact-section {
+        background: #f9f9f9;
+        padding: 60px 0;
+    }
+    /* feel free to contac t css */
+    .highlight-text {
+          color: rgb(79, 49, 49); 
+          font-size: 35px; /* Increased font size */
+          font-weight: 700; /* Extra bold */
+        }
+  
+    .section-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+  
+    .section-title h2 {
+        font-size: 27px;
+        font-weight: bold;
+        color: #333;
+        position: relative;
+        display: inline-block;
+    }
+  
+   
+  
+    .contact-subtitle {
+        font-size: 20px;
+        font-weight: 600;
+        color: #555;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+    .contact-details {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+  
+    .contact-item {
+        background: white;
+        padding: 20px;
+        width: 280px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px #0b0b0a;
+        transition: all 0.3s ease-in-out;
+    }
+  
+    .contact-item i {
+        font-size: 32px;
+        color: #990000;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+  
+    .contact-item h4 {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+  
+    .contact-item p {
+        font-size: 14px;
+        color: #555;
+    }
+  
+    .contact-item:hover {
+        background: rgb(177, 174, 174); /* Lighter Transparent Maroon */
+        color: white;
+        transform: translateY(-5px);
+    }
+  
+    .contact-item:hover i,
+    .contact-item:hover h4 {
+        color: white;
+    }
+  
+    .contact-item:hover p {
+        color: #fff;
+    }
+  
+    @media (max-width: 768px) {
+        .contact-details {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+  </style>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
-      <h3 class="sitename">  <span class="gold-text">Meatler</span>  
-        <span class="tagline">for meat lovers</span></h3>
-      
-      <div class="social-links d-flex justify-content-center">
-          <a href=""><i class="bi bi-whatsapp"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-      </div>
-      <p class="footer-text">Providing high-quality Meatler and Frozen Products for your everyday needs.</p>
-  </div>
-  
-   
-  </footer>
+        <h3 class="sitename">
+            <span class="gold-text">Meatler</span>  
+            <span class="tagline">for meat lovers</span>
+        </h3>
+
+        <div class="social-links d-flex justify-content-center">
+            <a href="https://wa.me/92350644677" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/Meatler" target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            </a>
+            <a href="https://www.instagram.com/meatler_pk/" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+
+        <p class="footer-text">Providing high-quality Meatler and Frozen Products for your everyday needs.</p>
+    </div>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

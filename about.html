@@ -39,17 +39,19 @@
         </h1>
     </a>
     
-      <nav id="navmenu" class="navmenu">
+      
+    <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="service.html">Services</a></li> 
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#team">Team</a></li>
+            <li><a href="index.html#product">Products</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav
-    
-    </div>
+      </nav>
+      </div>
+      
   </header>
 
   <main class="main">
@@ -57,43 +59,160 @@
     <!-- Hero Section -->
     <section id="nav1" class="h section dark-background">
     </section><!-- /Hero Section -->
-    
     <!-- About Section -->
-    <section id="about" class="about section">
+<section id="about" class="about section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <center>
+        <p class="highlight-text">Premium Quality Meat & Trusted by Generations</p>
+      </center>
+      
+      
+  </div><!-- End Section Title -->
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-
-        </div>
-
+  <div class="container">
+    <div class="row gy-4">
+      
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Meatler is a brand envisioned by Mian Abdul Khaliq—a renowned name in poultry—committed to providing the finest meat products, premium by-products, and top-tier frozen items.
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-circle"></i> <span>Wide range of chicken, mutton, beef, and frozen items.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Highest standards in freshness, taste, and quality.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Trusted partner for home cooks, restaurants, and businesses.</span></li>
+        </ul>
       </div>
 
-    </section><!-- /About Section -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <p>
+          Our journey began in 1985 with a poultry farm, evolving into a diverse range of high-quality meat products exported locally and internationally. Whether you are a home cook, a restaurant owner, or a distributor, Meatler delivers the perfect blend of taste, texture, and convenience.
+        </p>
+        <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+      </div>
 
+    </div>
+  </div>
+
+</section>
+<!-- Team Section -->
+<section id="team" class="team-section">
+   
+    <div class="team-container">
+        <div class="team-row">
+            <div class="team-member">
+                <img src="assets/founder.jpg" alt="Team Member">
+                <div class="info">
+                    <h2>Mian Abdul Khaliq</h2>
+                    <p>Founder</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/ceo.jpeg" alt="Team Member">
+                <div class="info">
+                    <h2>Mian Shan Khaliq</h2>
+                    <p>CEO</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/md.jpeg" alt="Team Member">
+                <div class="info">
+                    <h2>Mian Subhan Khaliq </h2>
+                    <p>Managing Director</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+.team-container {
+    max-width: 850px;
+    max-height: 950px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px #0b0b0a;
+        transition: all 0.3s ease-in-out;
+    }
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    width: 200px;
+    height: 250px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Stronger Box Shadow */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.team-member:hover {
+    background: rgb(177, 174, 174); /* Light Gray */
+    color: white;
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    border: 3px solid black; /* Black Border */
+}
+
+.team-member .info {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.team-member h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: gray;
+    transition: color 0.3s;
+}
+
+/* Hover pe text ka color white ho jayega */
+.team-member:hover .info h3,
+.team-member:hover .info p {
+    color: white;
+}
+
+</style>
+
+  
+    <!-- /About Section -->
+  
+      <style>
+  
+
+        .highlight-text {
+          color: red; 
+          font-size: 32px; /* Increased font size */
+          font-weight: 900; /* Extra bold */
+        }
+        .col-lg-6 p {
+    line-height: 2; /* Zyada gap ke liye value badha sakte ho */
+}
+
+      </style>
+      
+      
     
   </main>
 
