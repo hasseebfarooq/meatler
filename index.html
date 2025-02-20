@@ -144,45 +144,45 @@
                             <div class="price">$149.99</div>
                         </div>
             
-                        <div class="product-item" onclick="openModal('assets/nuggets.jpg')">
+                        <div class="product-item" onclick="openModal('assets/nuggets.jpeg')">
                             <img src="assets/nuggets.jpeg" alt="Nuggets">
                             <h3>Nuggets</h3>
                             <div class="price">$999.99</div>
                         </div>
             
-                        <div class="product-item" onclick="openModal('assets/petty.webp')">
+                        <div class="product-item" onclick="openModal('assets/petty.jpeg')">
                             <img src="assets/petty.jpeg" alt="Chicken Pattey">
                             <h3>Chicken Pattey</h3>
                             <div class="price">$599.99</div>
                         </div>
             
-                        <div class="product-item" onclick="openModal('assets/frenchfries.jpg')">
+                        <div class="product-item" onclick="openModal('assets/french fries.jpg')">
                             <img src="assets/french fries.jpg" alt="French Fries">
                             <h3>French Fries</h3>
                             <div class="price">$49.99</div>
                         </div>
             
-                        <div class="product-item" onclick="openModal('assets/seekh.jpg')">
+                        <div class="product-item" onclick="openModal('assets/seekh.jpeg')">
                             <img src="assets/seekh.jpeg" alt="Seekh Kabab">
                             <h3>Seekh Kabab</h3>
                             <div class="price">$799.99</div>
 
                         </div>
                         
-                        <div class="product-item" onclick="openModal('assets/nuggets.jpg')">
+                        <div class="product-item" onclick="openModal('assets/nb.jpeg')">
                             <img src="assets/nb.jpeg" alt="Nuggets">
                             <h3>Neblets</h3>
                             <div class="price">$999.99</div>
                         </div>
 
                         
-                        <div class="product-item" onclick="openModal('assets/nuggets.jpg')">
+                        <div class="product-item" onclick="openModal('assets/cutlers.png')">
                             <img src="assets/cutlers.png" alt="Nuggets">
                             <h3>Chicken Cutlers</h3>
                             <div class="price">$999.99</div>
                         </div>
 
-                        <div class="product-item" onclick="openModal('assets/nuggets.jpg')">
+                        <div class="product-item" onclick="openModal('assets/qema1.png')">
                             <img src="assets/qema1.png" alt="Nuggets">
                             <h3>Chicken Qeema</h3>
                             <div class="price">$999.99</div>
@@ -191,107 +191,102 @@
                 </div>
             </section>
             
-            <!-- Modal for Image View -->
-            <div id="imageModal" class="modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <img class="modal-content" id="modalImg">
-            </div>
-            
-            <style>
-                .product-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                    gap: 20px;
-                    padding: 20px;
-                }
-            
-                .product-item {
-                    text-align: center;
-                    background: #fff;
-                    padding: 15px;
-                    border-radius: 10px;
-                    box-shadow: 0 4px 10px #0b0b0a;
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                    cursor: pointer;
-                }
-            
-                .product-item:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-                    background: rgb(177, 174, 174);
-                    color: white;
-                }
-            
-                .product-item:hover h3 {
-                    color: white;
-                }
-            
-                .product-item img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 10px;
-                }
-            
-                .modal {
-                    display: none;
-                    position: fixed;
-                    z-index: 1000;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            
-                .modal-content {
-                    max-width: 80%;
-                    max-height: 80%;
-                    border-radius: 10px;
-                }
-            
-                .close {
-                    position: absolute;
-                    top: 15px;
-                    right: 30px;
-                    font-size: 35px;
-                    color: white;
-                    cursor: pointer;
-                }
-                
-            </style>
-            
-            <script>
-                function openModal(imgSrc) {
-                    var modal = document.getElementById("imageModal");
-                    var modalImg = document.getElementById("modalImg");
-            
-                    if (modal) {
-                        modal.style.display = "flex";
-                        modalImg.src = imgSrc;
-                    }
-                }
-            
-                function closeModal() {
-                    var modal = document.getElementById("imageModal");
-                    if (modal) {
-                        modal.style.display = "none";
-                        document.getElementById("modalImg").src = "";
-                    }
-                }
-            
-                document.addEventListener("DOMContentLoaded", function () {
-                    var modal = document.getElementById("imageModal");
-                    if (modal) {
-                        modal.style.display = "none";
-                    }
-                });
-            </script>
-                        
+       <!-- Modal for Image View -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
 
+<style>
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
 
+    .product-item {
+        text-align: center;
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px #0b0b0a;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .product-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        background: rgb(177, 174, 174);
+        color: white;
+    }
+
+    .product-item:hover h3 {
+        color: white;
+    }
+
+    .product-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 10px;
+    }
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function openModal(imgSrc) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImg");
+
+        if (modal) {
+            modal.style.display = "flex";
+            modalImg.src = imgSrc;
+        }
+    }
+
+    function closeModal() {
+        var modal = document.getElementById("imageModal");
+        if (modal) {
+            modal.style.display = "none";
+            document.getElementById("modalImg").src = "";
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var modal = document.getElementById("imageModal");
+        if (modal) {
+            modal.style.display = "none";
+        }
+    });
+</script>
 
 
 
@@ -437,7 +432,7 @@
     <div class="container">
 
         <div class="social-links d-flex justify-content-center">
-            <a href="https://wa.me/923611333301" target="_blank">
+            <a href="https://wa.me/923361133301" target="_blank">
                 <i class="bi bi-whatsapp"></i>
             </a>
        
