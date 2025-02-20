@@ -64,9 +64,9 @@
         <img src="assets/pic.jpg" class="slide" alt="Slide 3">
       </div>
     </section>
-  </main>
-  
-  <style>
+</main>
+
+<style>
     .hero {
       position: relative;
       width: 100%;
@@ -82,7 +82,7 @@
       width: 100%;
       height: 100%;
     }
-  
+
     .slide {
       position: absolute;
       width: 100%;
@@ -91,39 +91,38 @@
       opacity: 0;
       transition: opacity 1s ease-in-out;
     }
-  
+
     .slide.active {
       opacity: 1;
     }
-  
+
     /* Mobile Responsive */
     @media (max-width: 768px) {
-      .hero { height: 80vh; }
-      .slide { object-fit: contain; } /* Ensures image is fully visible */
+      .hero { height: 80vh; background: none; } /* Background removed */
+      .slide { object-fit: contain; }
     }
-  
+
     @media (max-width: 576px) {
-      .hero { height: 75vh; min-height: 500px; }
-      .slide { object-fit: contain; } /* Prevents cropping */
+      .hero { height: 75vh; min-height: 500px; background: none; } /* Background removed */
+      .slide { object-fit: contain; }
     }
-  </style>
-  
-  <script>
+</style>
+
+<script>
     document.addEventListener("DOMContentLoaded", function () {
       let slides = document.querySelectorAll('.slide');
       let currentSlide = 0;
-  
+
       function changeSlide() {
         slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
       }
-  
+
       setInterval(changeSlide, 3000); // Change every 3 seconds
     });
-  </script>
-  
-            
+</script>
+          
     </section><!-- /Hero Section -->
 <br>
 <br>
